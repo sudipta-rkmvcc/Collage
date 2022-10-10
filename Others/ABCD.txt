@@ -1,0 +1,17 @@
+git clone https://github.com/aircrack-ng/aircrack-ng
+  192  cd aircrack-ng
+  193  ls
+  194  cat README
+  195  cat INSTALLING
+  196  clear
+  197  cat INSTALLING
+  198  sudo apt-get install build-essential autoconf automake libtool pkg-config libnl-3-dev libnl-genl-3-dev libssl-dev ethtool shtool rfkill zlib1g-dev libpcap-dev libsqlite3-dev libpcre3-dev libhwloc-dev libcmocka-dev hostapd wpasupplicant tcpdump screen iw usbutils
+  199  make
+  200  make install
+  201  ./configure
+  202  ls
+  203  autoreconf -i
+  204  ./configure --with-experimental
+  205  make
+  206  make install
+  207  ldconfig

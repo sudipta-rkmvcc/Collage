@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <form action="file.jsp" method="post" onsubmit="return cheak()">
+        <table>
+            <tr>
+                <td> <label>Enter The Username: </label> </td>
+                <td> <input type="text" id="un" name="un" placeholder="Enter User Name " > </td>
+            </tr>
+            <tr>
+                <td> <label>Enter The Password: </label> </td>
+                <td> <input type="text" id="pass" name="pass" placeholder="Enter Password"> </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Submit"> </td>
+                <td><input type="reset" value="Reset"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="show()" value="Show Data"> </td>
+                <td><input type="button" onclick="add()" value="Insert Data"> </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function show(){
+
+        }
+        function add(){
+
+        }
+        function cheak(){
+            let p = document.getElementById("pass").value;
+            let u = document.getElementById("un").value;
+            if(p == "80019" || u == "root"){
+                return true;
+            }
+            alert("User Name & Password is not Match");
+            return false;
+        }
+    </script>
+</body>
+</html>
